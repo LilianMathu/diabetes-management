@@ -4,7 +4,7 @@ import User from "../models/UserModel";
 export const saveReadings = async (glucoseData) => {
   try {
     const user = await User.findOne({ phone: glucoseData.phone });
-    const reading = await Reading.create({ glucoseData, user: user._id }); // Add the user reference
+    const reading = await Reading.create({ ...glucoseData, user: user._id }); // Add the user reference
     return reading;
   } catch (error) {
     console.log(error);
