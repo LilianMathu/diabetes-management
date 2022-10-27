@@ -5,8 +5,9 @@ import morgan from "morgan";
 import mongoose from "mongoose";
 import path from "path";
 import config from "../config";
-import userRoute from "../api/routes/userRoute";
-import smsRoute from "../api/routes/smsRoute";
+import userRoute from "./routes/userRoute";
+import smsRoute from "./routes/smsRoute";
+import glucoseRoute from "./routes/glucose";
 
 const app = express();
 
@@ -41,5 +42,6 @@ connectDb();
 // Install routes
 app.use(userRoute);
 app.use(smsRoute);
+app.use(glucoseRoute);
 
 export default app;

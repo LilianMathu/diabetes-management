@@ -65,6 +65,7 @@ export const register = async (text, phoneNumber) => {
   return response;
 };
 
+
 const glucoseData = {};
 
 export const glucoseReadings = async (text, phoneNumber) => {
