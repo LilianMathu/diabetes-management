@@ -4,6 +4,7 @@ import Appbar from "../../Components/Appbar/Appbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Table from "../../Components/Table/Table";
 import Messages from "../../Components/Messages/Messages";
+import Dashboard from "../../Pages/Dashboard/Dashboard";
 import "./profilelayout.scss";
 
 const ProfileLayout = () => {
@@ -31,6 +32,7 @@ const ProfileLayout = () => {
         <Routes>
           <Route path="/messages" element={<Messages />} />
           <Route path="/patients" element={<Table />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
 
         {/* <div className="table">
