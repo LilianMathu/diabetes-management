@@ -1,0 +1,46 @@
+@import "../../assets/css/variables.scss";
+
+.login_btn {
+  display: flex;
+  flex-direction: column;
+  button {
+    margin: 1em 0;
+    padding: 1.2em;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    text-transform: capitalize;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(to right, $blueNavbar1, $blueNavbar2);
+    color: $blueSidebar2;
+    display: flex;
+    justify-content: center;
+    svg {
+      font-size: 1.1rem;
+      margin-left: 10px;
+    }
+  }
+  button:hover {
+    transition: all 0.3s ease;
+    box-shadow: none;
+    background: linear-gradient(to left, $blueNavbar1, $blueNavbar2);
+  }
+  .btn_alt {
+    background: linear-gradient(to left, $blueNavbar1, $blueNavbar2);
+  }
+  .btn_alt:hover {
+    transition: all 0.3s ease;
+    box-shadow: none;
+    background: linear-gradient(to right, $blueNavbar1, $blueNavbar2);
+  }
+}
+
+@include for-desktop {
+  .login_btn {
+    button {
+      width: 370px;
+    }
+  }
+}

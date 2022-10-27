@@ -5,6 +5,8 @@ import morgan from "morgan";
 import mongoose from "mongoose";
 import path from "path";
 import config from "../config";
+import userRoute from "../api/routes/userRoute";
+import smsRoute from "../api/routes/smsRoute";
 
 const app = express();
 
@@ -37,5 +39,7 @@ const connectDb = async () => {
 connectDb();
 
 // Install routes
+app.use(userRoute);
+app.use(smsRoute);
 
 export default app;

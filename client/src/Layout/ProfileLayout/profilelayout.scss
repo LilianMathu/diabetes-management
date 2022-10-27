@@ -1,0 +1,60 @@
+@import "../../assets/css/variables.scss";
+
+body {
+  background: #fff;
+}
+
+.profilelayout {
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+}
+
+.profilelayout_sidebar {
+  display: none;
+}
+
+.profilelayout_sidebar.open {
+  display: initial;
+}
+
+.profilelayout_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: calc(1% + 60px);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 5em;
+  margin: 0;
+}
+
+.profilelayout_content_feed {
+  width: 100%;
+  order: 2;
+}
+
+.profilelayout_content_profile {
+  width: 100%;
+  order: 1;
+}
+
+@include for-desktop {
+  .profilelayout_sidebar {
+    display: initial;
+  }
+  .profilelayout_content {
+    padding-left: 250px;
+    flex-direction: row;
+  }
+  .profilelayout_content_feed {
+    width: 50%;
+    order: 1;
+  }
+  .profilelayout_content_profile {
+    width: 45%;
+    order: 2;
+  }
+}

@@ -1,0 +1,62 @@
+.authlayout {
+  height: 100vh;
+  overflow-x: hidden;
+  background: #c7e5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authlayout_logo {
+  border-radius: 50%;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.authlayout_logo img {
+  max-width: 100px;
+}
+
+.authlayout_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1em;
+  padding: 0 2px;
+}
+
+.authlayout_actions p {
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.authlayout_actions_left {
+  color: #0091d5;
+}
+
+.authlayout_actions_right {
+  color: #003c72;
+}
+
+@media (min-width: 1200px) {
+  .authlayout_actions {
+    max-width: 370px;
+  }
+}
+/*# sourceMappingURL=authlayout.css.map */

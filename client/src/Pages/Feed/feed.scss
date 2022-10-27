@@ -1,0 +1,35 @@
+@import "../../assets/css/variables.scss";
+
+.feed {
+  background-color: rgba($color: $sidebarItems, $alpha: 0.8) a;
+  border-radius: 5px;
+  padding: 2em;
+  width: 100%;
+  margin: 0 0 2em 0;
+  p {
+    font-weight: 300;
+    color: $blueSidebar1;
+  }
+  &_date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    p {
+      margin-left: 10px;
+    }
+  }
+  &_image {
+    margin-bottom: 1em;
+    img {
+      max-height: 300px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+  &_content {
+    margin: 1rem 0;
+    p {
+      font-size: 1rem;
+    }
+  }
+}

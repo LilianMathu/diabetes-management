@@ -1,0 +1,64 @@
+@import "../../assets/css/variables.scss";
+
+.input {
+  margin: 1em 0;
+  label {
+    position: relative;
+    font-size: 1rem;
+    input {
+      box-shadow: 0 5px 15px rgba (0, 0, 0, 0.35);
+      background-color: #f5f5f5;
+      padding: 1em;
+      border-radius: 5px;
+      width: 300px;
+      outline: none;
+      font-size: 1rem;
+      border: 2px solid transparent;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translate(0, -50%);
+      color: $blueNavbar1;
+      transition: all 0.3s ease;
+      font-weight: 300;
+      font-size: 0.85rem;
+    }
+    input:not(:placeholder-shown) + span {
+      // color: transparent;
+      top: -10px;
+      transform: translate3d(0, -6px, 0) scale(0.75);
+    }
+    input:focus {
+      border: 1px solid $blueNavbar2;
+    }
+    input:focus + span {
+      top: -15px;
+      font-size: 10px;
+      background: linear-gradient(to right, $blueNavbar1, $blueSidebar2);
+      border-radius: 4px;
+      padding: 0 5px;
+      color: $lightBlue;
+    }
+    .input_icon {
+      color: $blueSidebar2;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(92%, -50%);
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+@include for-desktop {
+  .input {
+    label {
+      input {
+        width: 370px;
+      }
+    }
+  }
+}

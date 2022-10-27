@@ -1,0 +1,11 @@
+@import "../../assets/css/variables.scss";
+@import "../../../public/Assets/css/app.scss";
+
+.reset_p {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 2em;
+  cursor: pointer;
+  color: $blueNavbar1;
+  text-transform: capitalize;
+}

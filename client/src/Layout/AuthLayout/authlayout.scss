@@ -1,0 +1,46 @@
+@import "../../assets/css/variables.scss";
+
+.authlayout {
+  height: 100vh;
+  overflow-x: hidden;
+  background: #c7e5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &_logo {
+    border-radius: 50%;
+    padding: 2em;
+    margin-bottom: 1em;
+    img {
+      max-width: 100px;
+    }
+  }
+  &_actions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0 2px;
+    p {
+      text-transform: capitalize;
+      cursor: pointer;
+      font-weight: 300;
+    }
+    &_left {
+      color: $blueNavbar1;
+    }
+    &_right {
+      color: $blueSidebar2;
+    }
+  }
+}
+
+@include for-desktop {
+  .authlayout {
+    &_actions {
+      max-width: 370px;
+    }
+  }
+}

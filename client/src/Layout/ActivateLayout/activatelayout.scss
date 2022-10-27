@@ -1,0 +1,20 @@
+@import "../../assets/css/variables.scss";
+
+.activate {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  background: aliceblue;
+  p {
+    font-size: 1.5rem;
+    color: $greenButtons;
+    text-transform: capitalize;
+    span {
+      cursor: pointer;
+      color: $blueNavbar1;
+    }
+  }
+}

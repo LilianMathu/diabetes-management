@@ -1,0 +1,39 @@
+//colors
+$blueNavbar1: #0091d5;
+$blueNavbar2: #59c1e8;
+$lightBlue: #ace5ff;
+
+$blueSidebar1: #242444;
+$blueSidebar2: #003c72;
+$blackSidebar: #34444c;
+
+$greenButtons: #1fab89;
+$redButtons: #f11d28;
+
+$dustyrose: #dcae96;
+$peach: #ffe5b4;
+$lavender: #e6e6fa;
+
+$blueNav1: #00b4f4;
+$blueNav2: #0561d0;
+
+$sidebarItems: #9ac0cd;
+
+//mixins
+@mixin for-tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-laptop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

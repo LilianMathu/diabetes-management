@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "forgot.scss",
+        "../../assets/css/variables.scss"
+    ],
+    "names": [],
+    "file": "forgot.css"
+}
